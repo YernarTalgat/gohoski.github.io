@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ScratchCount — Счётчик лайков и звёздочек</title>
+<style>
+body {
+   	background: #FA8072;
+	color: #fff;
+}
+</style>
+<script>
+function startCount() {
+var id = document.getElementById("idProject").value;
+if(id == undefined) {
+alert("Пожалуйста, напишите ID проекта.");
+} else {
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://cors-anywhere.herokuapp.com/https://api.scratch.mit.edu/projects/142');
+xhr.responseType = 'json';
+xhr.send();
+xhr.onload = function() {
+  let responseObj = xhr.response;
+  alert(responseObj);
+};
+  }
+}
+</script>
+</head>
+<body>
+<center><h1>ScratchCount</h1><h2>Счётчик лайков и звёздочек Scratch проекта в реальном времени</h2></center>
+<center>ID проекта: <input value="104" id="idProject"><button onclick="startCount()">Пуск!</button></center>
+<center><h2>❤  ⠀ ⠀⭐</h2>
+<font size="10" id="likeCount">???</font> ⠀⠀⠀<font size="10" id="favCount">???</font></center>
+</body>
+</html>
