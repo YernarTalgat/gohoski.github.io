@@ -22,7 +22,7 @@ xhr.send();
 xhr.onload = function() {
   let responseObj = xhr.response;
   document.getElementById("likeCount").innerHTML = responseObj.stats.loves;
-  document.getElementById("favCount").innerHTML = responseObj.stats.favorites;
+  setTimeout(() => { document.getElementById("favCount").innerHTML = responseObj.stats.favorites; }, 2500); 
 };
 }
   }
