@@ -24,6 +24,7 @@ function startCount() {
               document.getElementById("likeCount").innerHTML = responseObj.stats.loves;
               document.getElementById("favCount").innerHTML = responseObj.stats.favorites;
             };
+			console.log("loop" + id);
         }, 2500);
     }
 }
