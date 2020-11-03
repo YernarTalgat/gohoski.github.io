@@ -15,12 +15,12 @@ if(id == undefined) {
 alert("Пожалуйста, напишите ID проекта.");
 } else {
 let xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.scratch.mit.edu/projects/142');
+xhr.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.scratch.mit.edu/projects/' + id);
 xhr.responseType = 'json';
 xhr.send();
 xhr.onload = function() {
   let responseObj = xhr.response;
-  console.log(responseObj);
+  console.log(responseObj.stats.loves);
 };
   }
 }
