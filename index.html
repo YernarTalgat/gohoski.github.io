@@ -22,8 +22,9 @@ xhr.send();
 xhr.onload = function() {
   let responseObj = xhr.response;
   document.getElementById("likeCount").innerHTML = responseObj.stats.loves;
-  setTimeout(() => { document.getElementById("favCount").innerHTML = responseObj.stats.favorites; }, 2500); 
+  document.getElementById("favCount").innerHTML = responseObj.stats.favorites;
 };
+setTimeout(() => { console.log("Updated the counter"); }, 2500);
 }
   }
 }
