@@ -14,7 +14,7 @@ var id = document.getElementById("idProject").value;
 if(id == undefined) {
 alert("Пожалуйста, напишите ID проекта.");
 } else {
-while (true) {
+setInterval(function() {
 let xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.scratch.mit.edu/projects/' + id);
 xhr.responseType = 'json';
@@ -24,8 +24,8 @@ xhr.onload = function() {
   document.getElementById("likeCount").innerHTML = responseObj.stats.loves;
   document.getElementById("favCount").innerHTML = responseObj.stats.favorites;
 };
-setTimeout(() => { console.log("Updated the counter"); }, 2500);
-}
+       }
+    }, 2500);
   }
 }
 </script>
