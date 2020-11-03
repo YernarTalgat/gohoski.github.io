@@ -14,14 +14,17 @@ var id = document.getElementById("idProject").value;
 if(id == undefined) {
 alert("Пожалуйста, напишите ID проекта.");
 } else {
+while (true) {
 let xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.scratch.mit.edu/projects/' + id);
 xhr.responseType = 'json';
 xhr.send();
 xhr.onload = function() {
   let responseObj = xhr.response;
-  console.log(responseObj.stats.loves);
+  document.getElementById("likeCount").innerHTML = responseObj.stats.loves;
+  document.getElementById("favCount").innerHTML = responseObj.stats.favorites;
 };
+}
   }
 }
 </script>
