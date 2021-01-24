@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Project title by ProjectCreator</title>
+		<link rel="stylesheet" href="http://host3958.itelit.pro/luctisity/style.css">
+		<script src="http://host3958.itelit.pro/luctisity/script.js"></script>
+		<style>
+			a {
+				color:#a6f8ff;
+			}
+			
+			b {
+				color:white;
+			}
+			
+			.bottomstuffproject {
+				margin-top:8px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<main>
+			<div class="projectscontainer" style="display:flex; width:62%; margin-left:auto; margin-right:auto;">
+			<iframe src="https://turbowarp.org/embed.html#123456789" width="499" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+				<article style="margin-left:7px; margin-top:5px;">
+					<label id="title" style="margin:0; height:30px; font-size:25px;">Project title</label><br/>by <a href="http://host3958.itelit.pro/luctisity/users/ProjectCreator.php">ProjectCreator</a>
+					<div class="projects" style="height:30%; width:auto;">
+						<label id="title">Instructions</label>
+						<p>none</p>
+					</div><br/>
+					<div class="projects" style="height:30%; width:auto;">
+						<label id="title">Credits</label>
+						<p>none</p>
+					</div>
+					<div class="bottomstuffproject">
+						<img src="https://scratch.mit.edu/svgs/project/love-red.svg" width="30px">
+						<b style="position:relative; bottom:8px;">0</b>
+						<img src="https://scratch.mit.edu/svgs/project/fav-yellow.svg" width="30px">
+						<b style="position:relative; bottom:8px;">0</b>
+						<a href="https://llk.github.io/scratch-gui/master/#123456789" id="seecode">See Scratch Code</a>
+					</div>
+				</article>
+			</div>
+			<div id="comments" class="darkcontainer">
+				<h2>Comments</h2>
+				<hr>
+				<div class="whitecontainer">
+					<article>
+						<section style="padding-bottom:10px;">
+							<h2>No comments</h2>
+						</section>
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<br/><h3 id="thicc" align="middle">Luniverse APS 2019-2020</h3>
+			<h4 id="thicc" align="middle">Powered by GHost</h3>
+		</footer>
+	</body>
+</html>

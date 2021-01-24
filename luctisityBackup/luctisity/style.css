@@ -1,0 +1,396 @@
+*{
+    font-family: sans-serif;
+}
+
+body {
+	background-color:black;
+	margin: 0;
+	color:white;
+	min-width:1282px;
+}
+
+.header {
+	background-color:#5a5acc;
+	border:5px solid #5555c2;
+	display:flex;
+	align-items: center;
+	height: 75px;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:10000;
+}
+
+.buttonhead {
+	background-color: #5a5acc;
+    color: white;
+    width: 110px;
+    padding: 2px;
+    /*margin-top: 12px;*/
+    padding-top: 12px;
+    margin: 10px;
+    height: 34px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8%;
+    border: 5px solid #5959c9;
+    transition: all 0.3s ease;
+    vertical-align: top;
+}
+
+.buttonhead:hover {
+	background-color:#4e4ea9;
+	transition: all 0.3s ease
+}
+
+b {
+	color:#ccccff;
+}
+
+.search_ {
+	background-color:#3a3ab5;
+	border-style:solid;
+	padding-top:80px;
+	padding-bottom:0px;
+	color:white;
+	height:100px;
+	vertical-align:center;
+}
+
+.search {
+	vertical-align:top;
+	background-color:#3a3ab5;
+	border-style:solid;
+	color:white;
+	margin-top:20px;
+	margin-left:5px;
+	width:140px;
+	height:40px;
+	border-radius: 10%;
+	border:1px solid #5959c9;
+	display:block;
+}
+
+.searchbtn {
+	margin-bottom:30px;
+	margin-top:20px;
+	display:block;
+}
+
+.account {
+	float:right;
+	vertical-align:center;
+}
+
+.headbuttons {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+
+.searcharea {
+	display:flex;
+}
+
+#username {
+	padding-bottom:8px;
+	padding-left:3px;
+	user-select: none;
+	cursor:pointer;
+}
+
+#MyProfileLink2 {
+	/* display: inline-block; */
+    padding: 10px 15px 15px 15px;
+    max-width: 260px;
+    height: 33px;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+    font-size: .8125rem;
+    font-weight: normal;
+	transition: all 0.3s ease;
+	margin-right:200px;
+	float:right;
+	display:block;
+}
+
+#MyProfileLink {
+	/* margin-top:75px; */
+	height:40px;
+	border:5px solid #5a5acc;
+	padding:8px;
+	text-decoration:none;
+	transition: all 0.3s ease;
+}
+
+#MyProfileLink:hover, #MyProfileLink2:hover {
+	background-color:#4e4ea9;
+	/* border:5px solid #4e4ea9; */
+	transition: all 0.3s ease;
+}
+
+#selection {
+	display: none;
+    position: absolute;
+    right: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+    background-color: #5a5acc;
+    padding: 10px;
+    min-width: 9rem;
+    max-width: 16.25rem;
+    overflow: visible;
+    color: white;
+    font-size: .8125rem;
+    font-weight: normal;
+    margin-right: 44%;
+    margin-top: 25px;
+}
+
+#selection > li, a {
+	color:white;
+	padding-top:6px;
+	padding-bottom:6px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.accountdrop {
+	padding-top: 170px;
+}
+
+.headbuttonsother {
+	/* background-color: #5a5acc; */
+    color: white;
+    width: 50px;
+    padding: 2px;
+    margin-top: 12px;
+    padding-top: 12px;
+    margin: 3px;
+    height: 34px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8%;
+    /* border: 5px solid #5959c9; */
+    transition: all 0.3s ease;
+    vertical-align: top;
+}
+
+.headbuttonsother:hover {
+	background-color:#4e4ea9;
+	transition: all 0.3s ease;
+}
+
+.newsfeed {
+	border: 5px solid #3d3d91;
+	background-color:#5757bd;
+	margin:20px;
+	padding:6px;
+	width:750px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.feed {
+	border: 5px solid #ababc2;
+	background-color:#c8c8e3;
+	padding:6px;
+	width:350px;
+	height:400px;
+}
+
+#title {
+	font-size:20px;
+	font-weight:bold;
+}
+
+.projectscontainer {
+	border: 5px solid #3d3d91;
+	background-color:#5757bd;
+	margin:20px;
+	padding:6px;
+}
+
+.projects {
+	border: 5px solid #ababc2;
+	background-color:#c8c8e3;
+	padding:6px;
+	overflow:auto;
+}
+
+#userproject {
+	color:#8d9394; 
+	font-weight:normal; 
+	font-size:14px;
+	text-decoration:none;
+}
+
+#userproject:hover {
+	text-decoration:underline;
+}
+
+#project {
+	color:#00acf0;
+	text-decoration:none;
+}
+
+#project:hover {
+	text-decoration:underline;
+}
+
+section {
+	display:inline-block;
+}
+
+
+
+
+.whitecontainer {
+	border: 5px solid #ababc2;
+	background-color:#c8c8e3;
+	padding:6px;
+	overflow:auto;
+}
+
+.darkcontainer {
+	border: 5px solid #3d3d91;
+	background-color:#5757bd;
+	margin:20px;
+	padding:6px;
+	width:750px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h2, h3 {
+	margin:0;
+	/*display:flex;*/
+}
+
+/*.userinfo {
+	display:flex;
+}*/
+
+.userinfo > img {
+	float:left;
+	margin-right:5px;
+}
+
+#usertext {
+	display:block;
+}
+
+p {
+	margin:0px;
+}
+
+.rows {
+	display:flex;
+}
+
+#warning {
+	display:block;
+	background-color:red;
+	color:white;
+	text-align:center;
+}
+
+#seecode {
+	background-color:#6495ed;
+	border-radius:5px;
+	padding:10px 20px 10px 20px;
+	color:white;
+	float:right;
+}
+
+iframe {
+	border:0px solid black;
+}
+
+#warning, #login {
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+  z-index: 10001;
+}
+
+.whitewarn {
+	text-align:middle;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	margin-top:10%;
+	width:40%;
+}
+
+#nsfwico {
+	filter:blur(2px);
+}
+
+#ProfileMisc {
+	
+}
+
+#logbuttons {
+	display:block;
+	float:right;
+}
+
+.buttonlog {
+	background-color: #5a5acc;
+    color: white;
+    width: 110px;
+    padding: 2px;
+    /*margin-top: 12px;*/
+    padding-top: 12px;
+    height: 34px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8%;
+    border: 5px solid #5959c9;
+    transition: all 0.3s ease;
+    vertical-align: top;
+}
+
+.buttonlog:hover {
+	background-color:#4e4ea9;
+	transition: all 0.3s ease
+}
+
+
+/*footer stuff*/
+
+footer {
+	margin:0px;
+	background-color:#131d5e;
+	width:99%;
+	border:6px solid #0d133d;
+}
+
+#thicc {
+	font-weight:bold;
+}
+
+/*#projectico {
+	border:5px solid #d7d7d7;
+}*/
+
+
+/*end*/
